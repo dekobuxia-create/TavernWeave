@@ -1,0 +1,16 @@
+{
+  "ingestedAt": "2026-08-27",
+  "source": {
+    "path": "rolecard-diy-workshop/runtime/xingyue/4.0.0/control-center.js",
+    "bytes": 1052047,
+    "sha256": "2b769fb31d074cdf240c9cb0807cbe3f009130c116aeeabeeb9d7e0963a13ae4"
+  },
+  "note": "行段摘录(非完整文件),行号标注在各段头;真相源=runtime 4.0.0 control-center.js",
+  "files": [
+    {
+      "dest": "悬浮球与轮盘参考.js",
+      "bytes": 54883,
+      "sha256": "c0977a01fda579bc97b62841cb25921d919c003032bbd9ea041e25d41e536573"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "ingestedAt": "2026-08-27",
+  "sourceCard": {
+    "path": "星月/星月 4.0.0/星月私立高等学院 MVU 4.0.0.json",
+    "bytes": 2477819,
+    "sha256": "bd448f436ce5ac31c2b2fa32b49953c3d937449ae62d42a148bcf1eafc6f70f1"
+  },
+  "files": [
+    {
+      "dest": "regex/01_正文对话气泡.json",
+      "source": "卡内 extensions.regex_scripts id=xingyue-dialog-bubble-v4.0.0",
+      "bytes": 855,
+      "sha256": "47c380e39707da930f3548aa6314e541f87c77d655fcf863d06a35cc3c9d88f1"
+    },
+    {
+      "dest": "regex/02_对话气泡COT.json",
+      "source": "卡内 extensions.regex_scripts id=xingyue-dialog-cot-bubble-v4.0.0",
+      "bytes": 584,
+      "sha256": "9232d07b02ccfa31d86a0c32a2af12979d008ce4496d964e9780fc7bb99b0d14"
+    },
+    {
+      "dest": "worldbook/69_cot_对话气泡.entry.json",
+      "source": "卡内 character_book.entries id=69",
+      "bytes": 1003,
+      "sha256": "c56878132902a630e7145125e9ec4171106210cc001b33b7dfc240649c4c3320"
+    },
+    {
+      "dest": "renderer/media_library.js",
+      "source": "星月/星月 4.0.0/components/media_library.js（卡内 tavern_helper 同源）",
+      "bytes": 179590,
+      "sha256": "faefe85b59e45bc944858e5bdc0a1a5c46566c49a4418416811d8ca1501cac09"
+    },
+    {
+      "dest": "renderer/bubble.css",
+      "source": "rolecard-diy-workshop/runtime/xingyue/4.0.0/bubble.css（远程挂载真身）",
+      "bytes": 1664,
+      "sha256": "8326478289f327e1d15818ad46995036f56b1b3e00c6ad3d3e687352fa3b17e3"
+    }
+  ]
+}

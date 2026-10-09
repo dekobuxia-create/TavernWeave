@@ -1,0 +1,16 @@
+{
+  "type": "script",
+  "enabled": true,
+  "name": "悬浮球",
+  "id": "ph-orb",
+  "info": "桌宠悬浮球:canvas 点阵球+拖拽吸附左右边+长按切收纳深度+半轮盘菜单(默认2键:打开小手机/气泡头像管理)。目标脚本缺席时点击给提示,球照常工作。",
+  "button": {
+    "enabled": false,
+    "buttons": []
+  },
+  "data": {},
+  "export_with": {
+    "data": true,
+    "button": true
+  }
+}

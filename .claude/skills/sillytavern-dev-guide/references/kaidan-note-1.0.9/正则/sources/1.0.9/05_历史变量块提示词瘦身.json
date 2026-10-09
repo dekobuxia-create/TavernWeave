@@ -1,0 +1,10 @@
+{
+  "order": 60,
+  "scriptName": "[提示词]怪谈·历史变量块瘦身",
+  "findRegex": "/\\s*<UpdateVariable>[\\s\\S]*?<\\/UpdateVariable>/g",
+  "replaceString": "",
+  "markdownOnly": false,
+  "promptOnly": true,
+  "minDepth": 2,
+  "note": "深度≥2 的历史楼层变量块从 AI 上下文剥离——当前状态由 MVU 注入的 stat_data 提供,历史 patch 是纯 token 浪费(每楼~500-1500tok);保留最近两层让 AI 看到自己刚做的变更"
+}

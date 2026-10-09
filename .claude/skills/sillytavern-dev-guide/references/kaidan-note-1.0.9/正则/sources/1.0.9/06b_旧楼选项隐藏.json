@@ -1,0 +1,10 @@
+{
+  "order": 75,
+  "scriptName": "[显示]怪谈·旧楼选项隐藏",
+  "findRegex": "/\\s*<选择>[\\s\\S]*?<\\/选择>/g",
+  "replaceString": "",
+  "markdownOnly": true,
+  "promptOnly": false,
+  "minDepth": 1,
+  "note": "深度≥1 的旧楼选项块显示层清空——旧选项已失效,留着既丑又误点;最新楼由 06 渲染成按钮"
+}

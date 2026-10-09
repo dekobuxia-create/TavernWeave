@@ -1,0 +1,9 @@
+{
+  "order": 90,
+  "scriptName": "[显示]怪谈·事件推演块隐藏",
+  "findRegex": "/<kdn-event-gen>[\\s\\S]*?(?:<\\/kdn-event-gen>\\s*|$)/",
+  "replaceString": "",
+  "markdownOnly": true,
+  "promptOnly": false,
+  "note": "回复开头的事件推演三行块(18_cot 约定「界面对 user 隐藏」)显示层清空;含流式半截兜底(匹配到结尾);提示词侧【保留】——AI 靠历史块追踪「距上次事件X天」,不可剥"
+}

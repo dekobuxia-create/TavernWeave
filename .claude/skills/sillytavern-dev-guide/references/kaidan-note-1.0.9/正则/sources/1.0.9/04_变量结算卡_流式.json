@@ -1,0 +1,10 @@
+{
+  "order": 50,
+  "scriptName": "[显示]怪谈·变量结算卡(流式中)",
+  "findRegex": "/<UpdateVariable(?:variable)?>(?![\\s\\S]*<\\/UpdateVariable(?:variable)?>)[\\s\\S]*$/",
+  "replaceString": "<div style=\"margin:10px 0;padding:9px 14px;max-width:100%;box-sizing:border-box;border-radius:12px;background:rgba(211,173,99,.07);border:.5px solid rgba(211,173,99,.25);color:rgba(211,173,99,.85);font-size:12px;letter-spacing:.5px\">◈ 变量结算中……</div>",
+  "markdownOnly": true,
+  "promptOnly": false,
+  "minDepth": 0,
+  "note": "流式输出途中（有开标签无闭标签）显示变量结算中，防止半截 JSON 刷屏；完整闭合后由 03 无闪烁接管；开闭标签兼容 (?:variable)? 变体"
+}

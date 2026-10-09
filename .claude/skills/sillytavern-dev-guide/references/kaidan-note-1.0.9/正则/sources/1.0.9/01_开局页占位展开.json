@@ -1,0 +1,9 @@
+{
+  "order": 10,
+  "scriptName": "[显示]怪谈·开局页占位展开",
+  "findRegex": "/\\/\\*怪谈·开局页\\*\\//",
+  "replaceFile": "assets/opening_page.html",
+  "markdownOnly": true,
+  "promptOnly": false,
+  "note": "first_mes/开局问候末尾的占位注释 → 展开为地理设定页卡片(仅显示层;AI 提示词里只见占位,由 02 剥掉)"
+}

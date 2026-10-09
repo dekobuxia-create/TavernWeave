@@ -1,0 +1,17 @@
+{
+  "comment": "[cot]对话气泡",
+  "content": "[cot]对话气泡\n\n<对话气泡>\n用途: 把角色说出口的台词单独拎成气泡，与叙事正文分离显示\n格式:\n  外壳: <ph-cot-dialog> 与 </ph-cot-dialog> 成对包裹，不嵌套、不放进代码块\n  每行: 「说话者：台词」，全角冒号；说话者只写名字，玩家写 {{user}}\n  台词: 纯文本——**加粗**、*斜体* 会原样显示，别拿来排版\n边界:\n  收: 明确说出口的对白\n  不收: 叙事、环境、没说出口的心理活动（这些留在正文）\n语气: 可用简短括号如「（低声）」，会原样显示给玩家；不想被看到就别写\n</对话气泡>\n",
+  "enabled": true,
+  "constant": true,
+  "selective": true,
+  "use_regex": true,
+  "keys": [],
+  "secondary_keys": [],
+  "position": "before_char",
+  "insertion_order": -9,
+  "extensions": {
+    "depth": 1,
+    "display_index": 91,
+    "cfSortKey": -9
+  }
+}

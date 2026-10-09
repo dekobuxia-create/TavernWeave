@@ -1,0 +1,17 @@
+{
+  "id": "xingyue-dialog-bubble-v4.0.0",
+  "scriptName": "[美化]正文对话气泡 v4.0.0",
+  "findRegex": "/<xy-dialog\\s+speaker=[\"']([^\"']+)[\"'](?:\\s+avatar=[\"']([^\"']*)[\"'])?\\s*>([\\s\\S]*?)<\\/xy-dialog>/gi",
+  "trimStrings": [],
+  "placement": [
+    2
+  ],
+  "disabled": false,
+  "markdownOnly": true,
+  "promptOnly": false,
+  "runOnEdit": false,
+  "substituteRegex": 0,
+  "minDepth": 0,
+  "maxDepth": null,
+  "replaceString": "<!-- 气泡样式已远程挂载（runtime/xingyue/4.0.0/bubble.css，由 media_library 本地注入 + 内置 baseline 兜底）。占位由 media_library 渲染成气泡。 -->\n<span class=\"xy-dialog-render\" data-xy-dialog-render data-xy-dialog-speaker=\"$1\" data-xy-dialog-avatar=\"$2\"><textarea class=\"xy-dialog-content-source\" data-xy-dialog-content-source hidden readonly>$3</textarea></span>\n"
+}

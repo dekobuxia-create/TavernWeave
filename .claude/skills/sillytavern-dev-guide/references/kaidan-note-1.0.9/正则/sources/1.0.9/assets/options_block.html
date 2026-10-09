@@ -1,0 +1,28 @@
+<div data-kdnopt-root style="margin:12px 0 4px;max-width:100%;box-sizing:border-box;container-type:inline-size">
+<style>
+[data-kdnopt-list]{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;min-width:0;max-width:100%}
+[data-kdnopt-list]>button{min-width:0;width:100%}
+[data-kdnopt-toggle]{display:flex;align-items:center;gap:5px;padding:3px 7px 3px 4px;border:1px solid rgba(211,173,99,.28);border-radius:999px;background:rgba(211,173,99,.07);font-size:10px;color:rgba(255,255,255,.68);cursor:pointer;user-select:none;transition:border-color .18s ease,background .18s ease}
+[data-kdnopt-collapse]{padding:3px 9px;border:1px solid rgba(255,255,255,.14);border-radius:999px;background:rgba(255,255,255,.05);font-size:10px;color:rgba(255,255,255,.6);cursor:pointer;user-select:none;font-family:inherit;transition:border-color .18s ease,color .18s ease}
+[data-kdnopt-collapse]:hover{border-color:rgba(211,173,99,.45);color:rgba(239,215,156,.9)}
+[data-kdnopt-collapse]:focus-visible{outline:2px solid rgba(211,173,99,.78);outline-offset:2px}
+[data-kdnopt-toggle]:has([data-kdnopt-direct]:checked){border-color:rgba(211,173,99,.72);background:rgba(211,173,99,.15);color:#efd79c}
+[data-kdnopt-direct]{appearance:none;-webkit-appearance:none;position:relative;width:28px;height:16px;margin:0;border:1px solid rgba(255,255,255,.18);border-radius:999px;background:rgba(255,255,255,.12);cursor:pointer;transition:background .18s ease,border-color .18s ease;flex:0 0 auto}
+[data-kdnopt-direct]::after{content:"";position:absolute;top:2px;left:2px;width:10px;height:10px;border-radius:50%;background:rgba(255,255,255,.72);box-shadow:0 1px 4px rgba(0,0,0,.35);transition:transform .18s ease,background .18s ease}
+[data-kdnopt-direct]:checked{border-color:#d3ad63;background:#d3ad63}
+[data-kdnopt-direct]:checked::after{transform:translateX(12px);background:#2a1f08}
+[data-kdnopt-direct]:focus-visible{outline:2px solid rgba(211,173,99,.78);outline-offset:2px}
+@container (max-width:240px){[data-kdnopt-list]{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:240px){[data-kdnopt-list]{grid-template-columns:minmax(0,1fr)}}
+</style>
+<pre data-kdnopt-raw hidden>{{SLOT1}}</pre>
+<div data-kdnopt-head style="display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:8px;max-width:100%">
+  <span style="font-size:11px;color:rgba(255,255,255,.42);letter-spacing:1px">— 接下来 —</span>
+  <span style="display:flex;align-items:center;gap:7px">
+    <label data-kdnopt-toggle title="开启后点击选项会立即发送；关闭时可多选并在输入栏继续编辑"><input type="checkbox" data-kdnopt-direct role="switch" aria-label="直发选项"><span>直发</span></label>
+    <button type="button" data-kdnopt-collapse aria-expanded="true" title="折叠/展开选项列表">收起</button>
+  </span>
+</div>
+<div data-kdnopt-list></div>
+<div data-kdnopt-tip role="status" aria-live="polite" style="display:none;font-size:11px;line-height:1.45;color:#d3ad63;padding:6px 2px 2px"></div>
+</div>

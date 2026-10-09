@@ -1,0 +1,18 @@
+{
+  "type": "script",
+  "enabled": true,
+  "name": "小手机/平板",
+  "id": "kaidan-note-bridge",
+  "info": "小手机/平板（前端内嵌自包含）：抽屉、主屏、幽讯（含群聊）、网购、论坛、搜索/新闻与设置API 全部封装在本脚本，不再依赖卡的 hud_html；生成超时 45s、拉模型 30s，失败即释放。",
+  "button": {
+    "enabled": false,
+    "buttons": []
+  },
+  "data": {},
+  "export_with": {
+    "data": true,
+    "button": true
+  },
+  "contentBytes": 392490,
+  "contentSha256": "89735fbab43fffbddcab63252cb5c62fb4b699709c9af587d4c943cf7e93ae27"
+}

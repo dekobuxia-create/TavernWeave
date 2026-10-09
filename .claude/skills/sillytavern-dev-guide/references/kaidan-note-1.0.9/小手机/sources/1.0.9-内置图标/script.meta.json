@@ -1,0 +1,20 @@
+{
+  "type": "script",
+  "enabled": true,
+  "name": "小手机/平板",
+  "id": "kaidan-note-bridge",
+  "info": "1.0.9-r2：内嵌 Tabler v3.46.0 的 51 个实际使用 SVG 图标，移除外部 CDN 与 Webfont 依赖；保持原有小手机、平板、MVU、AI、拖拽与交互逻辑。导入覆盖同 ID 后请刷新页面或重开楼层。",
+  "button": {
+    "enabled": false,
+    "buttons": []
+  },
+  "data": {},
+  "export_with": {
+    "data": true,
+    "button": true
+  },
+  "contentBytes": 431205,
+  "contentSha256": "2f8c4342d75435c025ad197b08470799ec95ad027b4d53979831a3969d045ee6",
+  "sourceWrapper": "怪谈笔记/v1.0.9/r2/[怪谈笔记] 小手机·平板r2.json",
+  "workingTreeFile": "怪谈笔记/components/scripts/kdn_phone.js"
+}

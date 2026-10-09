@@ -1,0 +1,10 @@
+{
+  "order": 40,
+  "scriptName": "[显示]怪谈·变量结算卡(完成)",
+  "findRegex": "/<UpdateVariable(?:variable)?>(?=[\\s\\S]*<\\/UpdateVariable(?:variable)?>)\\s*(?:<analysis>\\s*([\\s\\S]*?)\\s*<\\/analysis>\\s*)?(?:<JSONPatch>\\s*([\\s\\S]*?)\\s*<\\/JSONPatch>\\s*)?([\\s\\S]*)<\\/UpdateVariable(?:variable)?>/gi",
+  "replaceFile": "assets/var_card.html",
+  "markdownOnly": true,
+  "promptOnly": false,
+  "minDepth": 0,
+  "note": "宽松匹配(对齐星月 omni):$1=预分析(analysis)、$2=变量内容(JSONPatch),保持分割;$3=尾挂残渣兜底(贪婪到闭合标签,吞并额外模型解析追加的重复 analysis/JSON,不露成裸文本被 Showdown 包 <pre>);无内部标签时 $1/$2 为 undefined、整段进 $3;前置断言要求存在闭合标签,流式半截块不匹配、由 04 进行态接管。标签兼容 (?:variable)? 变体。默认折叠；两段共用 180px 短框与同一紧凑行高"
+}

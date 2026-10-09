@@ -1,0 +1,34 @@
+[
+  {
+    "id": 17,
+    "comment": "[cot]行动选项·一档(4项·默认开启)",
+    "enabled": true,
+    "insertion_order": 60,
+    "contentBytes": 1352,
+    "contentSha256": "b1fcc46f989ede5f308bbbb680c8b6ad1cb831242485ee9ff530414b4d5c3857"
+  },
+  {
+    "id": 19,
+    "comment": "[cot]行动选项·二档(6项·默认关闭)",
+    "enabled": false,
+    "insertion_order": 60,
+    "contentBytes": 1568,
+    "contentSha256": "19a948543da9d77173bca99e1c8acdc63cbff35d73b5cfe8b36b037c268665c3"
+  },
+  {
+    "id": 20,
+    "comment": "[cot]行动选项·三档(8项·默认关闭)",
+    "enabled": false,
+    "insertion_order": 60,
+    "contentBytes": 1857,
+    "contentSha256": "4fce28667f9d7b44ea25f0c12d2278b4b1a81614378d354794b59b8d64bb39a8"
+  },
+  {
+    "id": 21,
+    "comment": "[cot]行动选项·四档(10项·默认关闭)",
+    "enabled": false,
+    "insertion_order": 60,
+    "contentBytes": 2086,
+    "contentSha256": "2132e484e8cb25dfde55f3a27c04e824bfd1e2c23c1d889b260aebf476999219"
+  }
+]

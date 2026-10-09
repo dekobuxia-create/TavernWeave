@@ -1,0 +1,250 @@
+{
+  "ingestedAt": "2026-08-23",
+  "cardVersion": "1.0.9",
+  "scope": [
+    "小手机两版",
+    "MVU Zod 套件",
+    "世界书三条变量条目",
+    "正则套件",
+    "行动选项四条世界书"
+  ],
+  "excluded": [
+    "世界观/角色/规则/其余 cot 世界书",
+    "开场白与消息",
+    "statusbar.html",
+    "回封 JSON/PNG",
+    "模块化组件 registry 回落",
+    "通用化改写"
+  ],
+  "snapshots": {
+    "cardJson": {
+      "path": "怪谈笔记/v1.0.9/怪谈笔记·绮罗世界 MVU 1.0.9.json",
+      "bytes": 607677,
+      "sha256": "35255f43ffd65eda028369786b29ae88ffedde53dd50e582e323832e895a5b0a"
+    },
+    "r2PhoneWrapper": {
+      "path": "怪谈笔记/v1.0.9/r2/[怪谈笔记] 小手机·平板r2.json",
+      "bytes": 441017,
+      "sha256": "b1083ec1f220102b5a527df47ab536da58b038127b7caee9f64fd7c1591eb574"
+    }
+  },
+  "phone": {
+    "iconLibrary": {
+      "dest": "小手机/sources/1.0.9-拉取图标库/kdn_phone.js",
+      "sha256": "89735fbab43fffbddcab63252cb5c62fb4b699709c9af587d4c943cf7e93ae27",
+      "bytes": 392490,
+      "fingerprint": {
+        "build": "1.0.9",
+        "hudBuild": "1.0.9",
+        "embeddedTablerSubset": false,
+        "mentionsIconLibrary": true
+      }
+    },
+    "embeddedIcons": {
+      "dest": "小手机/sources/1.0.9-内置图标/kdn_phone.js",
+      "sha256": "2f8c4342d75435c025ad197b08470799ec95ad027b4d53979831a3969d045ee6",
+      "bytes": 431205,
+      "fingerprint": {
+        "build": "1.0.9-r2",
+        "hudBuild": "1.0.9",
+        "embeddedTablerSubset": true,
+        "mentionsIconLibrary": false
+      }
+    }
+  },
+  "files": [
+    {
+      "dest": "小手机/sources/1.0.9-拉取图标库/kdn_phone.js",
+      "source": "v1.0.9 card tavern_helper kaidan-note-bridge.content",
+      "sha256": "89735fbab43fffbddcab63252cb5c62fb4b699709c9af587d4c943cf7e93ae27",
+      "bytes": 392490,
+      "matchSource": true
+    },
+    {
+      "dest": "小手机/sources/1.0.9-内置图标/kdn_phone.js",
+      "source": "components/scripts/kdn_phone.js == v1.0.9/r2",
+      "sha256": "2f8c4342d75435c025ad197b08470799ec95ad027b4d53979831a3969d045ee6",
+      "bytes": 431205,
+      "matchSource": true
+    },
+    {
+      "dest": "mvu-zod/sources/1.0.9/zod_schema.js",
+      "source": "components/zod_schema.js",
+      "sha256": "054d6b0863161facb73c20bb56c48920952a1f52f58a7743ebe50ff2da4163bd",
+      "bytes": 19770,
+      "matchSource": true
+    },
+    {
+      "dest": "mvu-zod/sources/1.0.9/mvu_zod_cn.js",
+      "source": "components/scripts/mvu_zod_cn.js",
+      "sha256": "dcfcfd7f11a338131524dbd9285fca27a511b9e78fee0ddabfeb3c78cdce0788",
+      "bytes": 258,
+      "matchSource": true
+    },
+    {
+      "dest": "mvu-zod/sources/1.0.9/mvu_zod_global.js",
+      "source": "components/scripts/mvu_zod_global.js",
+      "sha256": "6cc4e511ea32ffe6cb0e7cd3402c49c4a079fc919da75905e256b044e31c64d1",
+      "bytes": 519,
+      "matchSource": true
+    },
+    {
+      "dest": "mvu-zod/sources/1.0.9/InitialVariables.json",
+      "source": "components/InitialVariables.json",
+      "sha256": "067619554ba1584d04ebf5ce34e1f2b1323f5f8c5baa5deb903954555fb348c0",
+      "bytes": 5809,
+      "matchSource": true
+    },
+    {
+      "dest": "mvu-zod/sources/1.0.9/mvu_update_full.txt",
+      "source": "components/mvu_update_full.txt",
+      "sha256": "37708ed32f87d0a68bdab073a29feed6c2fa04a15872e6ad42e2b800a5f498f6",
+      "bytes": 37501,
+      "matchSource": true
+    },
+    {
+      "dest": "mvu-zod/sources/1.0.9/mvu_update_output_format.txt",
+      "source": "components/mvu_update_output_format.txt",
+      "sha256": "b95934d60fb77a8d99b2e62a1ac8aef80cc73b5a1eefce188f54ac40da42d345",
+      "bytes": 3402,
+      "matchSource": true
+    },
+    {
+      "dest": "正则/sources/1.0.9/01_开局页占位展开.json",
+      "source": "怪谈笔记/components/regex/01_开局页占位展开.json",
+      "sha256": "5b692d2f62c3afa262ee06de15d154add8a8cb5700af044e495e1abab4290285",
+      "bytes": 365,
+      "matchSource": true
+    },
+    {
+      "dest": "正则/sources/1.0.9/02_开局占位提示词剥离.json",
+      "source": "怪谈笔记/components/regex/02_开局占位提示词剥离.json",
+      "sha256": "9b1c28874c8d28594a10b40e2e52e0c3ca3d19f641c53b3007405fd117efe181",
+      "bytes": 345,
+      "matchSource": true
+    },
+    {
+      "dest": "正则/sources/1.0.9/03_变量结算卡_完成.json",
+      "source": "怪谈笔记/components/regex/03_变量结算卡_完成.json",
+      "sha256": "f9a741c655ca73c4e15eb1a7ec6f51175a8fa79d9bfd285da74d39eb89c3bc56",
+      "bytes": 923,
+      "matchSource": true
+    },
+    {
+      "dest": "正则/sources/1.0.9/04_变量结算卡_流式.json",
+      "source": "怪谈笔记/components/regex/04_变量结算卡_流式.json",
+      "sha256": "ff74c0d6e6b22b6f065fc0ae5f1e8d6d8967d89b066d4868100e0b00ecdb9ed1",
+      "bytes": 730,
+      "matchSource": true
+    },
+    {
+      "dest": "正则/sources/1.0.9/05_历史变量块提示词瘦身.json",
+      "source": "怪谈笔记/components/regex/05_历史变量块提示词瘦身.json",
+      "sha256": "8c2b93308b86b78bfa1ed0e69d34b1b161af698652cd0cbc82f5891417cea3f0",
+      "bytes": 465,
+      "matchSource": true
+    },
+    {
+      "dest": "正则/sources/1.0.9/06_行动选项渲染.json",
+      "source": "怪谈笔记/components/regex/06_行动选项渲染.json",
+      "sha256": "8cd3c37b93cac662becf5875a90d421ea51f9270e6f6baadd0cac14275e877e3",
+      "bytes": 444,
+      "matchSource": true
+    },
+    {
+      "dest": "正则/sources/1.0.9/06b_旧楼选项隐藏.json",
+      "source": "怪谈笔记/components/regex/06b_旧楼选项隐藏.json",
+      "sha256": "a39027e5121d341f15b678dd15757cabaf07754db69c44b52d6ef9683217c813",
+      "bytes": 350,
+      "matchSource": true
+    },
+    {
+      "dest": "正则/sources/1.0.9/07_历史选项提示词剥离.json",
+      "source": "怪谈笔记/components/regex/07_历史选项提示词剥离.json",
+      "sha256": "13c94ecb74377fb41088862caf8432e024a3a37c572a7f02c222df52afd9b68f",
+      "bytes": 389,
+      "matchSource": true
+    },
+    {
+      "dest": "正则/sources/1.0.9/08_事件推演块隐藏.json",
+      "source": "怪谈笔记/components/regex/08_事件推演块隐藏.json",
+      "sha256": "2b3a1d09898757c5d622f56c129fe74223d0c6dda6ac375726abd4c9443da95d",
+      "bytes": 452,
+      "matchSource": true
+    },
+    {
+      "dest": "正则/sources/1.0.9/10_正文引号染色.json",
+      "source": "怪谈笔记/components/regex/10_正文引号染色.json",
+      "sha256": "e420d7aeff304c8b71996adbefe47376ca42efc86a9469e5d117196ac74a5220",
+      "bytes": 432,
+      "matchSource": true
+    },
+    {
+      "dest": "正则/sources/1.0.9/assets/opening_page.html",
+      "source": "怪谈笔记/components/regex/assets/opening_page.html",
+      "sha256": "3820039eedb87797923aebdaea57303c237d4ce305cce3d3b7e34b8715c06c5b",
+      "bytes": 3392,
+      "matchSource": true
+    },
+    {
+      "dest": "正则/sources/1.0.9/assets/options_block.html",
+      "source": "怪谈笔记/components/regex/assets/options_block.html",
+      "sha256": "7f3e660ccb4a4b5aa27c4cb180df710ad8cea6cf95a6e7af83dca7eba3a56a75",
+      "bytes": 3030,
+      "matchSource": true
+    },
+    {
+      "dest": "正则/sources/1.0.9/assets/var_card.html",
+      "source": "怪谈笔记/components/regex/assets/var_card.html",
+      "sha256": "a5723f9cbfe793ec62432591236b5042af620bcf6715110d23221ea86825861a",
+      "bytes": 1627,
+      "matchSource": true
+    },
+    {
+      "dest": "正则/sources/1.0.9/build/regex_scripts.json",
+      "source": "怪谈笔记/components/regex/build/regex_scripts.json",
+      "sha256": "860e0494544cadb73aca5224155a4688fd2e7b66dc91e8c557f2c099fab7165a",
+      "bytes": 12979,
+      "matchSource": true
+    },
+    {
+      "dest": "正则/sources/1.0.9/import-patches/[显示]怪谈·变量结算卡(完成).json",
+      "source": "怪谈笔记/v1.0.9/r1/[显示]怪谈·变量结算卡(完成).json",
+      "sha256": "3a2252a05b2b58118cbf894a637ef00e570a5c7447908c7c04d27e39325efe7b",
+      "bytes": 2242,
+      "matchSource": true
+    },
+    {
+      "dest": "行动选项/sources/1.0.9/worldbook/17_cot_行动选项_一档.entry.json",
+      "source": "怪谈笔记/components/worldbook_entries/build/17_cot_行动选项_一档.entry.json",
+      "sha256": "b24618683f007f651229e9d6053969a95ad6340f5d7e647e04066b73f01f214b",
+      "bytes": 2097,
+      "matchSource": true,
+      "cardContentSha256": "b1fcc46f989ede5f308bbbb680c8b6ad1cb831242485ee9ff530414b4d5c3857"
+    },
+    {
+      "dest": "行动选项/sources/1.0.9/worldbook/19_cot_行动选项_二档.entry.json",
+      "source": "怪谈笔记/components/worldbook_entries/build/19_cot_行动选项_二档.entry.json",
+      "sha256": "7c567d4e905935e4847582d0fd298e11a280271fb7c97cd9f238dfb5feb3876a",
+      "bytes": 2320,
+      "matchSource": true,
+      "cardContentSha256": "19a948543da9d77173bca99e1c8acdc63cbff35d73b5cfe8b36b037c268665c3"
+    },
+    {
+      "dest": "行动选项/sources/1.0.9/worldbook/20_cot_行动选项_三档.entry.json",
+      "source": "怪谈笔记/components/worldbook_entries/build/20_cot_行动选项_三档.entry.json",
+      "sha256": "356262d2555a404970b7b11749990ef167494d4687ec8413fc1e0de362fa5afb",
+      "bytes": 2617,
+      "matchSource": true,
+      "cardContentSha256": "4fce28667f9d7b44ea25f0c12d2278b4b1a81614378d354794b59b8d64bb39a8"
+    },
+    {
+      "dest": "行动选项/sources/1.0.9/worldbook/21_cot_行动选项_四档.entry.json",
+      "source": "怪谈笔记/components/worldbook_entries/build/21_cot_行动选项_四档.entry.json",
+      "sha256": "dff11d0501929000e7cc7725024205109761374b4f36e08bcf24e95ad330d128",
+      "bytes": 2853,
+      "matchSource": true,
+      "cardContentSha256": "2132e484e8cb25dfde55f3a27c04e824bfd1e2c23c1d889b260aebf476999219"
+    }
+  ]
+}

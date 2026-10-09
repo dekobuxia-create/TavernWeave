@@ -1,0 +1,9 @@
+{
+  "order": 80,
+  "scriptName": "[提示词]怪谈·历史选项剥离",
+  "findRegex": "/\\s*<选择>[\\s\\S]*?<\\/选择>/g",
+  "replaceString": "",
+  "markdownOnly": false,
+  "promptOnly": true,
+  "note": "所有楼层的选项块从 AI 上下文剥离——每轮选项由世界书 17/19/20/21 条现教现生成,历史选项=token 浪费+模式固化源(AI 会抄自己旧选项)"
+}

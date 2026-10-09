@@ -1,0 +1,17 @@
+{
+  "id": "xingyue-dialog-cot-bubble-v4.0.0",
+  "scriptName": "[美化]对话气泡 COT v4.0.0",
+  "findRegex": "/<xy-cot-dialog>\\s*([\\s\\S]*?)\\s*<\\/xy-cot-dialog>/gi",
+  "trimStrings": [],
+  "placement": [
+    2
+  ],
+  "disabled": false,
+  "markdownOnly": true,
+  "promptOnly": false,
+  "runOnEdit": false,
+  "substituteRegex": 0,
+  "minDepth": 0,
+  "maxDepth": null,
+  "replaceString": "<span class=\"xy-cot-dialog-render\" data-xy-cot-dialog-render data-xy-cot-dialog><textarea class=\"xy-cot-dialog-source\" data-xy-cot-dialog-source hidden readonly>$1</textarea></span>\n"
+}

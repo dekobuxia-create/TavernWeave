@@ -1,0 +1,26 @@
+{
+  "id": "phone-kaidan-1.0.9",
+  "extends": "phone-generic",
+  "brand": {
+    "name": "Kaidan Note",
+    "toast": "怪谈笔记",
+    "about": "Kaidan Note",
+    "version": "1.0.9-r2"
+  },
+  "opening": {
+    "attitudeField": "对怪谈笔记的态度",
+    "emptyPlace": "交给怪谈安排一座大城市"
+  },
+  "apps": {
+    "keepInShell": ["st", "hx", "fm", "mk", "nw", "ch", "me", "js", "zj", "zc", "wd", "kn", "wc"]
+  },
+  "fieldMap": {
+    "kaidan": "怪谈笔记",
+    "permission": "权限",
+    "impact": "影响倾向",
+    "investigation": "暴露调查组",
+    "execution": "处刑档案",
+    "worldTune": "世界调制"
+  },
+  "pluginsDisabledByDefault": []
+}

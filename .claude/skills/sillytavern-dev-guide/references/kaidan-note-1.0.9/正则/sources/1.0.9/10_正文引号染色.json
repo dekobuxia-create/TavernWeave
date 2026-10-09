@@ -1,0 +1,9 @@
+{
+  "order": 100,
+  "scriptName": "[美化]怪谈·正文引号染色",
+  "findRegex": "/「([^」\\n]{1,60})」/g",
+  "replaceString": "<span style=\"color:#d9c08a\">「$1」</span>",
+  "markdownOnly": true,
+  "promptOnly": false,
+  "note": "正文美化最小档:直角引号对话淡金染色,与状态栏金调呼应;不发明新 AI 输出标记(F4 未定义正文语义标签,零依赖零风险);后续视觉升级走沙盘"
+}

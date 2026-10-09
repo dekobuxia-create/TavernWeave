@@ -1,0 +1,17 @@
+{
+  "id": "ph-dialog-bubble",
+  "scriptName": "[美化]正文对话气泡(通用)",
+  "findRegex": "/<ph-dialogs+speaker=[\"']([^\"']+)[\"'](?:s+avatar=[\"']([^\"']*)[\"'])?s*>([sS]*?)</ph-dialog>/gi",
+  "trimStrings": [],
+  "placement": [
+    2
+  ],
+  "disabled": false,
+  "markdownOnly": true,
+  "promptOnly": false,
+  "runOnEdit": false,
+  "substituteRegex": 0,
+  "minDepth": 0,
+  "maxDepth": null,
+  "replaceString": "<span class=\"ph-dialog-render\" data-ph-dialog-render data-ph-dialog-speaker=\"$1\" data-ph-dialog-avatar=\"$2\"><textarea class=\"ph-dialog-content-source\" data-ph-dialog-content-source hidden readonly>$3</textarea></span>\n"
+}

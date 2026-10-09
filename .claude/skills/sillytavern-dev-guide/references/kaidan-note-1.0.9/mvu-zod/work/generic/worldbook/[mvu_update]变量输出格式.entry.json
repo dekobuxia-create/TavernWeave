@@ -1,0 +1,33 @@
+{
+  "id": 24,
+  "keys": [],
+  "secondary_keys": [],
+  "comment": "[mvu_update]变量输出格式",
+  "content": "通用小手机 v0.1.0-work - [mvu_update]变量输出格式\n\n输出容器:\n  - 回复顺序固定为 正文 → 单个 <UpdateVariable>;变量块必须位于回复末尾。\n  - 变量块顺序固定为 <UpdateVariable> → <analysis> → </analysis> → <JSONPatch> → JSON数组 → </JSONPatch> → </UpdateVariable>。\n  - 禁止在变量块外输出 <analysis>,禁止输出独立变量预分析段。\n\nanalysis:\n  - 先静默核对新闻与民意、世界三轴与社会认知及其余真实字段。\n  - 只概括正文支持的真实变化、结算依据与未结事项,不写路径清单。\n  - 有变化时每条结论必须对应至少一个 JSONPatch 操作。\n  - 无变化时简述本轮没有受正文支持的变量变化,JSONPatch 输出 [];不要求固定句式。\n\nJSONPatch:\n  - 内容必须是合法 JSON 数组;禁止额外文本、Markdown 代码围栏、JSON 注释或尾随逗号。\n  - replace 需要 op、path、value;用于任何已存在的完整叶路径。\n  - add 需要 op、path、value;用于既有父对象下尚不存在的新字段、既有 record 容器下的全新完整实体或以 /- 追加数组,数组追加前去重。\n  - remove 需要 op、path;只删除允许删除的动态 record 项或数组当前索引。\n  - move 需要 op、from、path;只用于动态 key 重命名,禁止携带 value。\n  - 禁止 add 或 replace 整个固定对象,尤其禁止整块写入 /环境/所在位置、/环境/城市环境。\n  - 新增动态 record 时一次 add 完整对象,禁止先建空壳再补字段。\n  - 禁止新增顶层根;角色头像、立绘及其变体禁止写入 stat_data。\n  - 模型不得通过 JSONPatch 修改既有 /角色档案/*/羁绊标签 或 /角色档案/*/角色类型,包括升格、降级、解除羁绊和直接改写派生值;只有首次完整 add 新角色对象时写入 false/当前互动,后续加入羁绊只由玩家状态栏事务写入。\n  - 数字与布尔值使用 JSON 原生类型;true、false 禁止加引号。\n\npath:\n  - 顶层根只能是 环境、user、世界演化、舆论新闻、角色档案、资产库、居所、载具、雷达系统。\n  - path 按斜杠分段后交给 lodash 路径处理,不使用 RFC 6901 的 ~0 或 ~1 转义。\n  - 动态 key 禁含 /、.、~、[、],出现时依次改为 ／、．、～、［、］。\n\n格式模板:\n<UpdateVariable>\n<analysis>\n用自然语言列出本轮已确认的变量变化与依据;没有变化时说明没有受正文支持的变化。\n</analysis>\n<JSONPatch>\n[\n  {\"op\":\"replace\",\"path\":\"/<顶层根>/<既有完整叶路径>\",\"value\":\"<最终值>\"},\n  {\"op\":\"add\",\"path\":\"/<顶层根>/<既有父对象>/<新字段或新实体>\",\"value\":\"<新值或完整对象>\"},\n  {\"op\":\"remove\",\"path\":\"/<顶层根>/<动态项或数组当前索引>\"},\n  {\"op\":\"move\",\"from\":\"/<顶层根>/<旧动态key>\",\"path\":\"/<顶层根>/<新动态key>\"}\n]\n</JSONPatch>\n</UpdateVariable>\n  - 尖括号占位内容必须替换为本轮真实路径和值,禁止原样复制。\n  - 只保留本轮实际需要的操作;没有变化时数组直接写 []。\n\n收尾:\n  - 没有正文事实支持的变量不更新。\n  - JSON 数组结束后必须输出 </JSONPatch>,禁止直接从 ] 跳到 </UpdateVariable>。",
+  "constant": true,
+  "selective": true,
+  "insertion_order": 0,
+  "enabled": true,
+  "position": "before_char",
+  "use_regex": true,
+  "extensions": {
+    "position": 0,
+    "exclude_recursion": true,
+    "probability": 100,
+    "useProbability": true,
+    "depth": 1,
+    "selectiveLogic": 0,
+    "prevent_recursion": true,
+    "delay_until_recursion": false,
+    "scan_depth": null,
+    "match_whole_words": null,
+    "case_sensitive": null,
+    "role": 0,
+    "vectorized": false,
+    "sticky": 0,
+    "cooldown": 0,
+    "delay": 0,
+    "display_index": 100,
+    "cfSortKey": 0
+  }
+}

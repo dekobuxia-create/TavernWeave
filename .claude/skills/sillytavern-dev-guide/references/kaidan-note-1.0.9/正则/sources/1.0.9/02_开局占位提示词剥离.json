@@ -1,0 +1,9 @@
+{
+  "order": 20,
+  "scriptName": "[提示词]怪谈·开局占位剥离",
+  "findRegex": "/\\s*\\/\\*怪谈·开局页\\*\\//",
+  "replaceString": "",
+  "markdownOnly": false,
+  "promptOnly": true,
+  "note": "AI 上下文里不需要看到占位注释(开局页只是 UI);对应星月[清理]开局页剥离,本卡占位极短、剥离即净"
+}

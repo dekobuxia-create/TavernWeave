@@ -1,0 +1,32 @@
+{
+  "id": 17,
+  "keys": [],
+  "secondary_keys": [],
+  "comment": "[cot]行动选项·一档(4项·默认开启)",
+  "constant": true,
+  "selective": true,
+  "insertion_order": 60,
+  "enabled": true,
+  "position": "before_char",
+  "use_regex": true,
+  "extensions": {
+    "position": 0,
+    "exclude_recursion": true,
+    "probability": 100,
+    "useProbability": true,
+    "depth": 4,
+    "selectiveLogic": 0,
+    "prevent_recursion": true,
+    "delay_until_recursion": false,
+    "scan_depth": null,
+    "match_whole_words": null,
+    "case_sensitive": null,
+    "role": 0,
+    "vectorized": false,
+    "sticky": 0,
+    "cooldown": 0,
+    "delay": 0,
+    "display_index": 60
+  },
+  "content": "**[玩家选项格式]**\n\n每次回复的**绝对结尾**,必须输出四个选项,格式:\n\n<选择>\n1|类型|选项内容\n2|类型|选项内容\n3|类型|选项内容\n4|类型|选项内容\n</选择>\n\n**格式要求**:\n- 用 `<选择>` 和 `</选择>` 包裹\n- 每行:`序号|类型|内容`,用 `|` 分隔\n- 序号1-4,阿拉伯数字\n- 每个选项一行,不要合并\n\n**选项规则**:\n1. 动作以动词开头,禁止\"我\"\"你\"等人称\n2. 对话只写引号内容,禁止旁白\n3. 禁止\"试图\"\"想要\"等意图词\n4. 语言朴素概括,贴合当前剧情\n5. 符合角色人设\n6. **浓缩与跳脱**:选项越少越要短而狠——本档每项尽量 12 字内;四项方向必须天各一方,严禁任何两项同向或同调\n7. 亲密场景进行中、重大关头需{{user}}原文抉择时,本轮不输出选项块\n\n**四个类型**(越靠前越常规,越靠后越跳脱):\n1 = 基于{{random::理性,感性,直觉,冲动,利益,道德}}的行动\n2 = {{random::激化矛盾,引入变量,制造困境,揭露秘密}}\n3 = 情境互动(日常/亲密/色情,视场景)\n4 = {{random::反套路,意外,无厘头,打破常规}}\n\n**示例输出**:\n<选择>\n1|理性|核对流单,标出对不上的那一笔\n2|揭露秘密|把并案时间线甩进匿名论坛\n3|亲密|把她冰凉的手拢进掌心\n4|无厘头|给楼下三只猫排一个值班表\n</选择>"
+}

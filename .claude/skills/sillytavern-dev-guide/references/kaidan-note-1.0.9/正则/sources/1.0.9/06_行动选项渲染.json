@@ -1,0 +1,11 @@
+{
+  "order": 70,
+  "scriptName": "[显示]怪谈·行动选项渲染",
+  "findRegex": "/<选择>\\s*([\\s\\S]*?)\\s*<\\/选择>/",
+  "replaceFile": "assets/options_block.html",
+  "markdownOnly": true,
+  "promptOnly": false,
+  "minDepth": 0,
+  "maxDepth": 0,
+  "note": "<选择>N|类型|内容</选择> 转为纯声明式按钮容器；持久 kdn_bridge 解析隐藏原文、维护直发偏好并执行填入或发送；仅最新楼可操作"
+}

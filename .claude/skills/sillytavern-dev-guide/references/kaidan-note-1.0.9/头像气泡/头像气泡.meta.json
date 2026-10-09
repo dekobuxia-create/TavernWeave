@@ -1,0 +1,16 @@
+{
+  "type": "script",
+  "enabled": true,
+  "name": "头像气泡",
+  "id": "ph-avatar-bubble",
+  "info": "对话气泡渲染器+四套可切换皮肤(PERSONA/霜镜/鎏金档案/墨线分镜)+头像气泡管理面板(头像绑定/皮肤切换)。依赖媒体库脚本存取头像(不装则显示占位剪影);配套正则两条与世界书 cot 条目见包内 regex/ worldbook/。悬浮球轮盘或 __phBubble.openManager() 呼出管理面板。",
+  "button": {
+    "enabled": false,
+    "buttons": []
+  },
+  "data": {},
+  "export_with": {
+    "data": true,
+    "button": true
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "id": 20,
+  "keys": [],
+  "secondary_keys": [],
+  "comment": "[cot]行动选项·三档(8项·默认关闭)",
+  "constant": true,
+  "selective": true,
+  "insertion_order": 60,
+  "enabled": false,
+  "position": "before_char",
+  "use_regex": true,
+  "extensions": {
+    "position": 0,
+    "exclude_recursion": true,
+    "probability": 100,
+    "useProbability": true,
+    "depth": 4,
+    "selectiveLogic": 0,
+    "prevent_recursion": true,
+    "delay_until_recursion": false,
+    "scan_depth": null,
+    "match_whole_words": null,
+    "case_sensitive": null,
+    "role": 0,
+    "vectorized": false,
+    "sticky": 0,
+    "cooldown": 0,
+    "delay": 0,
+    "display_index": 60
+  },
+  "content": "**[玩家选项格式]**\n\n每次回复的**绝对结尾**,必须输出八个选项,格式:\n\n<选择>\n1|类型|选项内容\n2|类型|选项内容\n3|类型|选项内容\n4|类型|选项内容\n5|类型|选项内容\n6|类型|选项内容\n7|类型|选项内容\n8|类型|选项内容\n</选择>\n\n**格式要求**:\n- 用 `<选择>` 和 `</选择>` 包裹\n- 每行:`序号|类型|内容`,用 `|` 分隔\n- 序号1-8,阿拉伯数字\n- 每个选项一行,不要合并\n\n**选项规则**:\n1. 动作以动词开头,禁止\"我\"\"你\"等人称\n2. 对话只写引号内容,禁止旁白\n3. 禁止\"试图\"\"想要\"等意图词\n4. 语言朴素概括,贴合当前剧情\n5. 符合角色人设\n6. **浓缩与跳脱**:选项短而狠(每项尽量 14 字内);八项覆盖尽量多的方向,严禁两项同向或同调\n7. 亲密场景进行中、重大关头需{{user}}原文抉择时,本轮不输出选项块\n\n**八个类型**(越靠前越常规,越靠后越跳脱):\n1 = 基于{{random::理性,感性,直觉,冲动,利益,道德}}的行动\n2 = {{random::武力,智取,交涉,求助}}破局\n3 = {{random::合作,对抗,功利,个性}}姿态的言语\n4 = {{random::移动,外出,换角色,换地点}}\n5 = 时跳{{random::数小时后,数天后,下个事件}}\n6 = {{random::激化矛盾,引入变量,制造困境,揭露秘密}}\n7 = 情境互动(日常/亲密/色情,视场景)\n8 = {{random::反套路,意外,无厘头,打破常规}}\n\n**示例输出**:\n<选择>\n1|道德|撤掉那条会伤及无辜的举报\n2|求助|把片子发给匿名讨论帖那位骨科医生\n3|对抗|\"想让我停,先证明你抓得到。\"\n4|换地点|把落脚点挪去城中村的握手楼\n5|时跳|【下个事件】白板上多了一条新线索\n6|引入变量|放一条真假参半的线索喂钓鱼的人\n7|亲密|枕着她的膝盖补一场觉\n8|打破常规|给居委会寄一箱润喉糖\n</选择>"
+}

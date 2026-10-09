@@ -1,0 +1,82 @@
+[
+  {
+    "type": "script",
+    "enabled": true,
+    "name": "Zod Schema",
+    "id": "kaidan-note-zod-schema",
+    "info": "怪谈笔记·绮罗世界 MVU 1.0.9：15 根变量 Zod 结构约束，布尔值仅兼容 true/false 与对应字符串。",
+    "button": {
+      "enabled": false,
+      "buttons": []
+    },
+    "data": {},
+    "export_with": {
+      "data": true,
+      "button": true
+    },
+    "contentBytes": 19770,
+    "contentSha256": "054d6b0863161facb73c20bb56c48920952a1f52f58a7743ebe50ff2da4163bd"
+  },
+  {
+    "type": "script",
+    "enabled": true,
+    "name": "MVU Zod 脚本（国外使用）",
+    "id": "kaidan-note-mvu-zod-global",
+    "info": "怪谈笔记·绮罗世界 MVU 1.0.9：直接加载 MagVarUpdate，全球 CDN 失败时切换 testingcf，不等待异项目事件。",
+    "button": {
+      "enabled": true,
+      "buttons": [
+        {
+          "name": "重新处理变量",
+          "visible": true
+        },
+        {
+          "name": "重新读取初始变量",
+          "visible": true
+        },
+        {
+          "name": "重试额外模型解析",
+          "visible": true
+        }
+      ]
+    },
+    "data": {},
+    "export_with": {
+      "data": true,
+      "button": true
+    },
+    "contentBytes": 519,
+    "contentSha256": "6cc4e511ea32ffe6cb0e7cd3402c49c4a079fc919da75905e256b044e31c64d1"
+  },
+  {
+    "type": "script",
+    "enabled": false,
+    "name": "MVU Zod 脚本（国内使用）",
+    "id": "kaidan-note-mvu-zod-cn",
+    "info": "怪谈笔记·绮罗世界 MVU 1.0.9：直接从 testingcf 加载 MagVarUpdate，默认禁用。",
+    "button": {
+      "enabled": true,
+      "buttons": [
+        {
+          "name": "重新处理变量",
+          "visible": true
+        },
+        {
+          "name": "重新读取初始变量",
+          "visible": true
+        },
+        {
+          "name": "重试额外模型解析",
+          "visible": true
+        }
+      ]
+    },
+    "data": {},
+    "export_with": {
+      "data": true,
+      "button": true
+    },
+    "contentBytes": 258,
+    "contentSha256": "dcfcfd7f11a338131524dbd9285fca27a511b9e78fee0ddabfeb3c78cdce0788"
+  }
+]

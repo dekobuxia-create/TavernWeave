@@ -1,0 +1,16 @@
+{
+  "type": "script",
+  "enabled": true,
+  "name": "媒体库",
+  "id": "ph-media-library",
+  "info": "媒体容器 / 图床 URL 地址存储中转。媒体数据存本脚本名下的酒馆助手脚本级变量，经 __phMedia 桥供小手机等前端读写；不装本脚本时小手机自动降级为无媒体展示。制卡配媒体优先图床 URL（base64 内置是全体玩家的基础负担，云酒馆/手机部署酒馆易炸内存；独立前端无此顾虑）；玩家游玩中导入媒体属正常使用。",
+  "button": {
+    "enabled": false,
+    "buttons": []
+  },
+  "data": {},
+  "export_with": {
+    "data": true,
+    "button": true
+  }
+}

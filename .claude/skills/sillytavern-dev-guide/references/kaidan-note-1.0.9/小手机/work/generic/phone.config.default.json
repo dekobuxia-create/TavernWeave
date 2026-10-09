@@ -1,0 +1,45 @@
+{
+  "id": "phone-generic",
+  "brand": {
+    "name": "小手机",
+    "toast": "小手机",
+    "about": "通用小手机",
+    "version": "0.1.0-work"
+  },
+  "compat": {
+    "scriptId": "phone-hud",
+    "namespace": "ph",
+    "keepLegacyStorageKeys": false
+  },
+  "opening": {
+    "fields": ["国家", "省份", "城市", "具体地点"],
+    "attitudeField": "",
+    "submitPrefix": "【开局设定】",
+    "emptyPlace": "交给剧情安排一座大城市",
+    "suffix": " ——设定完成,从这里开始吧。"
+  },
+  "apps": {
+    "keepInShell": ["st", "hx", "fm", "mk", "nw", "ch", "me", "js", "zj", "zc"],
+    "optionalShell": ["wd"],
+    "cardPlugins": ["kn", "wc"]
+  },
+  "fieldMap": {
+    "user": "user",
+    "environment": "环境",
+    "characters": "角色档案",
+    "assets": "资产库",
+    "residence": "居所",
+    "vehicles": "载具",
+    "news": "舆论新闻",
+    "world": "世界演化"
+  },
+  "pluginsDisabledByDefault": [
+    "grantorBadge",
+    "investigationBoard",
+    "karmaLaws",
+    "worldTune",
+    "haremSpace",
+    "wishForum",
+    "executionArchive"
+  ]
+}
